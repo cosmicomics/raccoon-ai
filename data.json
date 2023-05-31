@@ -1,0 +1,96 @@
+{
+  "shifts": [
+    {
+      "id": 1,
+      "start": 2,
+      "end": 4,
+      "length": 2,
+      "allocation": null,
+      "locked": false
+    },
+    {
+      "id": 2,
+      "start": 4,
+      "end": 6,
+      "length": 2,
+      "allocation": null,
+      "locked": false
+    },
+    {
+      "id": 3,
+      "start": 6,
+      "end": 8,
+      "length": 2,
+      "allocation": null,
+      "locked": false
+    },
+     {
+      "id": 4,
+      "start": 8,
+      "end": 10,
+      "length": 2,
+      "allocation": null,
+      "locked": false
+    },
+    {
+      "id": 5,
+      "start": 10,
+      "end": 12,
+      "length": 2,
+      "allocation": null,
+      "locked": false
+    }
+  ],
+  "persons": [
+    {
+      "id": 1,
+      "name": "Totoro"
+    },
+    {
+      "id": 2,
+      "name": "Kiki"
+    },
+    {
+      "id": 3,
+      "name": "Koko"
+    },
+     {
+      "id": 4,
+      "name": "Up"
+    },
+     {
+      "id": 5,
+      "name": "Yak"
+    }
+
+  ],
+  "rules": [
+    [
+       {
+          "id": 2,
+          "type": "FLOATING_BLANK_PERIODS",
+          "originalId": 2,
+         "operator": "MINIMUM_OR_EQUAL",
+          "params": {
+              "person": 2,
+              "periodLength": 1,
+              "periodOffset": 0,
+              "numberOfPeriods": 5,
+              "fromDate": 2,
+              "toDate": 12
+          }
+        }
+    ],
+    [
+       {
+          "id": 1,
+          "type": "NUMBER_OF_HOURS",
+          "originalId": 1,
+          "params": {
+              "person": 2,
+              "numberOfHours": 10
+              }
+        }
+    ]
+  ]
+}

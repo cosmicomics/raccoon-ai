@@ -1,0 +1,105 @@
+{
+  "shifts": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 4,
+      "length": 4,
+      "allocation": null,
+      "locked": false
+    },
+    {
+      "id": 2,
+      "start": 2,
+      "end": 6,
+      "length": 4,
+      "allocation": null,
+      "locked": false
+    }
+  ],
+  "persons": [
+    {
+      "id": 1,
+      "name": "Totoro"
+    },
+    {
+      "id": 2,
+      "name": "Kiki"
+    }
+  ],
+  "rules": [
+     [
+      {
+        "id": 5,
+        "type": "NO_OVERLAPS",
+        "params": {
+          "person": 1
+        }
+      },
+       {
+        "id": 5,
+        "type": "NO_OVERLAPS",
+        "params": {
+          "person": 2
+        }
+      }
+    ],
+    [
+      {
+        "id": 1,
+        "type": "NUMBER_OF_PERSONS",
+        "params": {
+          "shift": 1,
+          "numberOfPersons": 1
+        }
+      },
+      {
+        "id": 2,
+        "type": "NUMBER_OF_PERSONS",
+        "params": {
+          "shift": 2,
+          "numberOfPersons": 1
+        }
+      }
+    ],
+    [
+      {
+       "id": 7,
+        "type": "NUMBER_OF_HOURS_IN_COMMON",
+        "params": {
+          "person1": 1,
+          "person2": 2,
+          "numberOfHours": 0
+        }
+      }
+    ],
+    [
+      {
+        "id": 3,
+        "type": "NUMBER_OF_HOURS",
+        "params": {
+          "person": 1,
+          "numberOfHours": 2
+        }
+      },
+      {
+        "id": 4,
+        "type": "NUMBER_OF_HOURS",
+        "params": {
+          "person": 2,
+          "numberOfHours": 4
+        }
+      }
+    ],
+    [
+      {
+        "id": 6,
+        "type": "NUMBER_OF_SHIFTS",
+        "params": {
+          "person": 1,
+          "numberOfShifts": 1
+        }
+      }
+    ]
+  ]
+}

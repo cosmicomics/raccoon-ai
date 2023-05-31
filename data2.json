@@ -1,0 +1,157 @@
+{
+  "shifts": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 4,
+      "length": 4,
+      "allocation": null,
+      "locked": false
+    },
+    {
+      "id": 2,
+      "start": 6,
+      "end": 10,
+      "length": 4,
+      "allocation": null,
+      "locked": false
+    },
+    {
+      "id": 3,
+      "start": 14,
+      "end": 18,
+      "length": 4,
+      "allocation": null,
+      "locked": false
+    },
+    {
+      "id": 4,
+      "start": 20,
+      "end": 24,
+      "length": 4,
+      "allocation": null,
+      "locked": false
+    }
+  ],
+  "persons": [
+    {
+      "id": 1,
+      "name": "Totoro"
+    },
+    {
+      "id": 2,
+      "name": "Kiki"
+    }
+  ],
+  "rules": [
+    [
+      {
+        "id": 0,
+        "type": "NO_OVERLAPS",
+        "params": {
+          "person": 1
+        }
+      },
+      {
+        "id": -1,
+        "type": "NO_OVERLAPS",
+        "params": {
+          "person": 2
+        }
+      }
+    ],
+    [
+      {
+        "id": 5,
+        "type": "MINIMUM_REST_HOURS",
+        "params": {
+          "person": 1,
+          "numberOfHours": 10
+        }
+      },
+      {
+        "id": 6,
+        "type": "MINIMUM_REST_HOURS",
+        "params": {
+          "person": 2,
+          "numberOfHours": 10
+        }
+      }
+    ],
+    [
+      {
+        "id": 1,
+        "type": "NUMBER_OF_PERSONS",
+        "params": {
+          "shift": 1,
+          "numberOfPersons": 1
+        }
+      },
+      {
+        "id": 2,
+        "type": "NUMBER_OF_PERSONS",
+        "params": {
+          "shift": 2,
+          "numberOfPersons": 1
+        }
+      },
+      {
+        "id": 3,
+        "type": "NUMBER_OF_PERSONS",
+        "params": {
+          "shift": 3,
+          "numberOfPersons": 1
+        }
+      },
+      {
+        "id": 4,
+        "type": "NUMBER_OF_PERSONS",
+        "params": {
+          "shift": 4,
+          "numberOfPersons": 2
+        }
+      }
+    ],
+    [
+      {
+        "id": 7,
+        "type": "NUMBER_OF_SHIFTS",
+        "params": {
+          "person": 1,
+          "numberOfShifts": 2
+        }
+      },
+      {
+        "id": 8,
+        "type": "NUMBER_OF_SHIFTS",
+        "params": {
+          "person": 2,
+          "numberOfShifts": 2
+        }
+      }
+    ],
+    [
+      {
+        "id": 9,
+        "type": "WISHES",
+        "params": {
+          "person": 2,
+          "shiftWishes": [
+            2
+          ]
+        }
+      }
+    ],
+    [
+      {
+        "id": "10",
+        "type": "NUMBER_OF_HOURS_IN_COMMON",
+        "params": {
+          "person1": 1,
+          "person2": 2,
+          "numberOfHours": 4
+        }
+      }
+    ]
+  ]
+}

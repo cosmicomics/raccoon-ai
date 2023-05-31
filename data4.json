@@ -1,0 +1,134 @@
+{
+  "shifts": [
+    {
+      "id": 1,
+      "start": 3,
+      "end": 8,
+      "length": 10,
+      "allocation": null,
+      "locked": false
+    },
+    {
+      "id": 2,
+      "start": 13,
+      "end": 18,
+      "length": 10,
+      "allocation": null,
+      "locked": false
+    },
+    {
+      "id": 3,
+      "start": 23,
+      "end": 28,
+      "length": 10,
+      "allocation": null,
+      "locked": false
+    },
+    {
+      "id": 4,
+      "start": 32,
+      "end": 38,
+      "length": 10,
+      "allocation": null,
+      "locked": false
+    }
+  ],
+  "persons": [
+    {
+      "id": 1,
+      "name": "Totoro"
+    },
+    {
+      "id": 2,
+      "name": "Kiki"
+    }
+  ],
+  "rules": [
+    [
+      {
+        "id": 1,
+        "type": "NUMBER_OF_PERSONS",
+        "params": {
+          "shift": 1,
+          "numberOfPersons": 1
+        }
+      },
+      {
+        "id": 2,
+        "type": "NUMBER_OF_PERSONS",
+        "params": {
+          "shift": 2,
+          "numberOfPersons": 1
+        }
+      },{
+        "id": 3,
+        "type": "NUMBER_OF_PERSONS",
+        "params": {
+          "shift": 3,
+          "numberOfPersons": 1
+        }
+      },{
+        "id": 4,
+        "type": "NUMBER_OF_PERSONS",
+        "params": {
+          "shift": 4,
+          "numberOfPersons": 1
+        }
+      }
+    ],
+    [
+      {
+        "id": 5,
+        "type": "REST_HOURS_BY_PERIOD",
+        "params": {
+          "person": 1,
+          "period": 10,
+          "numberOfHours": 5
+        }
+      }
+    ],
+    [
+      {
+        "id": 5,
+        "type": "NUMBER_OF_HOURS_BY_PERIOD",
+        "params": {
+          "person": 1,
+          "period": 10,
+          "numberOfHours": 5
+        }
+      }
+    ],
+    [
+      {
+        "id": 5,
+        "type": "REST_HOURS_AFTER_SHIFTS",
+        "params": {
+          "person": 1,
+          "shifts": [1, 3],
+          "numberOfHours": 0
+        }
+      }
+    ],
+    [
+      {
+        "id": 6,
+        "type": "DIVIDE_SHIFTS",
+        "params": {
+          "persons": [1, 2],
+          "shifts": [1, 2, 3, 4]
+        }
+      }
+    ],
+    [
+      {
+        "id": 6,
+        "type": "NUMBER_OF_HOURS_IN_COMMON",
+        "params": {
+          "person1": 1,
+          "person2": 2,
+          "numberOfHours": 0
+        }
+      }
+    ]
+  ]
+}
